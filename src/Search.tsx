@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import {  useState } from 'react'
 import {useQuery} from '@tanstack/react-query'
 import {Spinner} from './components/ui/spinner'
 import ProfileCard from './ProfileCard'
@@ -21,19 +21,9 @@ const fetchGithubUser = async (username: string): Promise<GithubUser> => {
 
 }
 
-// const GithubSearch = () => {
 
-  
-// interface SearchProps{
-//   onSearch: (username:string) => void
-// }
-
-
-
-// }
 
 const Search = () => {
-// const [search,setSearch] = useState<string>('')
 
   const [query,setQuery] = useState<string>('')
   const [username,setUsername] = useState<string>('')
